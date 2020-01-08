@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/* the header section style */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  background-color: white;
+  border: 1px dotted grey;
+  display: flex;
+  float: right;
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
+.navbar a {
+  border-bottom: 1px solid transparent;
+  color: grey;
+  font-size: 25px;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid blue;
+  color: black;
+}
+.logo {
+  margin-bottom: 10%;
+  margin-left: 50px;
+  margin-right: auto;
+}
+/* main image (slider) style */
+.main-image {
+  background-image: url("/static/images/company.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 9%;
+  position: relative;
+}
+.main-image p {
+  background-color: #cb9998;
+  bottom: -60px;
+  color: white;
+  display: inline-block;
+  font-size: 24;
+  font-weight: bold;
+  left: 20px;
+  padding: 30;
+  position: absolute;
+  width: 35%;
+}
+/* the image in the body of the site style */
+.img1 {
+  float: left;
+  height: 160;
+  margin-right: 5%;
+  width: 50%;
+}
+/* dividing the content section */
+.body-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  color: darkgrey;
+}
+.body-section h3 {
+  color: #5f5d5d;
+  display: inline-block;
+  margin-right: 25%;
+}
+.article {
+  flex: 0 0 50%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.article h3 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+/* the cards style begins here */
+.cards {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.card {
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-bottom: 20px;
+  margin: 5px;
+  transition: 0.3s;
+  width: 33.33%;
+}
+.card p {
+  color: grey;
+  margin-left: 10px;
+}
+.card h4 {
+  color: #5f5d5d;
+  margin-left: 10px;
+}
+/* font awesome style */
+.fa,
+.fas {
+  color: #cb9998;
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 0 20px 10px;
+}
+.btn1 {
+  background-color: #cb9998;
+  border-radius: 7px;
+  border: 0;
+  color: white;
+  margin-left: 75%;
+  outline: 0px;
+  padding: 15px;
+}
+.btn2 {
+  background-color: #cb9998;
+  border: 0px;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 75%;
+  outline: 0px;
+  padding: 15px;
+}
+/* the carousel style */
+.carousel-items {
+  display: flex;
+}
+.item1 {
+  background-image: url("/static/images/bird.jpg");
+  background-size: cover;
+  height: 300px;
+  margin-left: 40px;
+  width: 22%;
+}
+.item2 {
+  background-image: url("/static/images/trees.jpg");
+  background-size: cover;
+  height: 300px;
+  margin-left: 40px;
+  width: 22%;
+}
+.item3 {
+  background-image: url("/static/images/flower.jpeg");
+  background-size: cover;
+  height: 300px;
+  margin-left: 40px;
+  width: 22%;
+}
+.item4 {
+  background-image: url("/static/images/cat.jpeg");
+  background-size: cover;
+  height: 300px;
+  margin-left: 40px;
+  width: 22%;
+}
+.carousel-title {
+  background-color: #cb9998;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-bottom: 50px;
+  padding: 5px;
+  width: 25%;
+}
+.carousel-title h4 {
+  color: white;
+  margin-left: 20px;
+}
+.footer {
+  height: 120px;
+  position: relative;
+}
+.footer p {
+  bottom: 0;
+  color: grey;
+  position: absolute;
+  right: 60px;
+}
+/* the smaller screens styling begins here */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar,
+  .carousel-items {
+    flex-direction: column;
+  }
+  .carousel-items img {
+    width: 100%;
+  }
+  
+}
