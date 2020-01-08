@@ -192,14 +192,39 @@ body {
   right: 60px;
 }
 /* the smaller screens styling begins here */
-@media screen and (max-width: 700px) {
-  .row,
+@media screen and (max-width: 769px) {
   .navbar,
-  .carousel-items {
+  .carousel-items,
+  .body-section {
     flex-direction: column;
+  }
+  .carousel-title {
+    max-width: 50%;
   }
   .carousel-items img {
     width: 100%;
   }
-  
+  .article {
+    display: inline-block;
+  }
+  .card {
+    position: relative;
+  }
+  .btn1,
+  .btn2 {
+    position: absolute;
+    bottom: 2px;
+    right: 15px;
+    max-width: 100%;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-left: 40px;
+    width: 80%
+  }
 }
