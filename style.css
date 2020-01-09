@@ -3,6 +3,7 @@
 }
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 /* the header section style */
 .header {
@@ -14,11 +15,13 @@ body {
   background-color: white;
   border: 1px solid grey;
   display: flex;
-  float: right;
-  margin-bottom: 15px;
-  margin-right: 50px;
+  margin: 20px 0;
+  margin-right: 10%;
   width: 40%;
   justify-content: space-between;
+}
+.mobile-nav {
+  display: none;
 }
 .navbar a {
   border-bottom: 1px solid transparent;
@@ -40,18 +43,21 @@ body {
 }
 /* main image (slider) style */
 .main-image {
-  background-image: url("/static/images/company.jpg");
+  background-image: url(/static/images/company.jpg);
+  height: 80%;
   background-size: cover;
-  height: 70%;
   background-repeat: no-repeat;
   margin-bottom: 9%;
   position: relative;
+}
+.main-image img {
+  width: 100%;
+  height: 55%;
 }
 .main-image p {
   background-color: #cb9998;
   bottom: -60px;
   color: white;
-  display: inline-block;
   font-size: 24;
   font-weight: bold;
   left: 20px;
@@ -141,6 +147,18 @@ body {
 .carousel-items {
   display: flex;
 }
+.carousel-title {
+  background-color: #cb9998;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 25%;
+}
+.carousel-title h4 {
+  color: white;
+  margin-left: 20px;
+}
 .item1 {
   background-image: url("/static/images/bird.jpg");
   background-size: cover;
@@ -169,18 +187,6 @@ body {
   margin-left: 40px;
   width: 22%;
 }
-.carousel-title {
-  background-color: #cb9998;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-bottom: 50px;
-  padding: 5px;
-  width: 25%;
-}
-.carousel-title h4 {
-  color: white;
-  margin-left: 20px;
-}
 .footer {
   height: 120px;
   position: relative;
@@ -192,39 +198,107 @@ body {
   right: 60px;
 }
 /* the smaller screens styling begins here */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .navbar,
   .carousel-items,
-  .body-section {
+  .body-section,
+  .cards {
     flex-direction: column;
   }
+  .navbar {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 2%;
+  }
+  .main-image {
+    margin-bottom: 60px;
+  }
+  .main-image p {
+    font-size: 20px;
+    width: 45%;
+  }
+  .body-section {
+    margin: auto;
+    margin-bottom: 60px;
+  }
   .carousel-title {
-    max-width: 50%;
+    width: 45%;
   }
   .carousel-items img {
     width: 100%;
   }
+  .img1 {
+    float: none;
+    height: auto;
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 100%;
+  }
   .article {
     display: inline-block;
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .body-section h3 {
+    margin-bottom: 0;
+    margin-right: 0;
   }
   .card {
+    margin: auto;
     position: relative;
+    width: 98%;
+    margin-bottom: 20px;
   }
-  .btn1,
+  .btn1 {
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
   .btn2 {
-    position: absolute;
-    bottom: 2px;
-    right: 15px;
+    margin-right: 20px;
     max-width: 100%;
   }
   .item1,
   .item2,
   .item3,
   .item4 {
-    background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    margin-left: 40px;
-    width: 80%
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 10px;
+    min-height: 400px;
+    width: 96%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mobile-nav {
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 2%;
+  }
+  .main-image {
+    height: 40%;
+  }
+  .main-image p {
+    height: 20%;
+    padding: 20px;
+    font-size: 16px;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 10px;
+    min-height: 300px;
+    width: 100%;
   }
 }
