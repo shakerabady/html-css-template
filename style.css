@@ -144,8 +144,9 @@ body {
   padding: 15px;
 }
 .carousel-container {
-  width: 60%;
-  margin: auto;
+  width: 99%;
+  margin-right: 10px;
+  margin-left: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -153,33 +154,31 @@ body {
 .carousel-slide {
   display: flex;
   margin: auto;
+  width: 98%;
 }
 .carousel-slide div {
   height: 350px;
-  min-width: 350px;
+  min-width: 463px;
+  margin: 5px;
 }
 .div1{
-  margin: 15px;
   background-image: url('/static/images/bird.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .div2{
-  margin: 15px;
   background-image: url('/static/images/cat.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .div3{
 
-  margin: 15px;
   background-image: url('/static/images/company.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .div4{
-  margin: 15px;
   background-image: url('/static/images/dogs.jpg');
   background-repeat: no-repeat;
   background-size: cover;
